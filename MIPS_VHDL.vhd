@@ -74,11 +74,11 @@ control: entity work.control_unit_VHDL
 -- multiplexer regdest
   reg_write_dest <= "111" when  reg_dst= "10" else
         instr(6 downto 4) when  reg_dst= "01" else
-        instr(9 downto 7);
+        instr(9 downto 7); --we are setting write address according to instruction type
 -- register file instantiation of the MIPS Processor in VHDL
- reg_read_addr_1 <= instr(12 downto 10);
+ reg_read_addr_1 <= instr(12 downto 10); --we are setting read addresses
  reg_read_addr_2 <= instr(9 downto 7);
-register_file: entity work.register_file_VHDL
+register_file: entity work.register_file_VHDL --mapping the set variables to actual register memory
  port map
  (
  clk => clk,
