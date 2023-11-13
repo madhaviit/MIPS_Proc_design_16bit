@@ -1,6 +1,9 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 -- VHDL code for Control Unit of the MIPS Processor
+
+--according to desired instruction decoded through opcode and funct we are trying to
+--assign the enabler variables
 entity control_unit_VHDL is
 port (
   opcode: in std_logic_vector(2 downto 0);
