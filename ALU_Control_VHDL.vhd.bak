@@ -1,3 +1,5 @@
+-- fpga4student.com: FPGA projects, Verilog projects, VHDL projects
+-- VHDL project: VHDL code for single-cycle MIPS Processor
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 -- VHDL code for ALU Control Unit of the MIPS Processor

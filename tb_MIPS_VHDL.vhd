@@ -1,8 +1,5 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
--- fpga4student.com: FPGA projects, Verilog projects, VHDL projects
--- VHDL project: VHDL code for single-cycle MIPS Processor
--- VHDL testbench code for single-cycle MIPS Processor
 ENTITY tb_MIPS_VHDL IS
 END tb_MIPS_VHDL;
  

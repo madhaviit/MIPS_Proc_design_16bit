@@ -1,8 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_signed.all;
--- fpga4student.com: FPGA projects, Verilog projects, VHDL projects
--- VHDL project: VHDL code for single-cycle MIPS Processor
 entity MIPS_VHDL is
 port (
  clk,reset: in std_logic;
