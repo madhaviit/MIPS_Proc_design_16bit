@@ -16,12 +16,12 @@ architecture Behavioral of MIPS_VHDL is
  signal instr: std_logic_vector(15 downto 0);
  signal reg_dst,mem_to_reg,alu_op: std_logic_vector(1 downto 0);
  signal jump,branch,mem_read,mem_write,alu_src,reg_write: std_logic;
- signal reg_write_dest: std_logic_vector(2 downto 0);
- signal reg_write_data: std_logic_vector(15 downto 0);
  signal reg_read_addr_1: std_logic_vector(2 downto 0);
- signal reg_read_data_1: std_logic_vector(15 downto 0);
+ signal reg_read_data_1: std_logic_vector(7 downto 0);
  signal reg_read_addr_2: std_logic_vector(2 downto 0);
- signal reg_read_data_2: std_logic_vector(15 downto 0);
+ signal reg_read_data_2: std_logic_vector(7 downto 0);
+ signal reg_write_dest: std_logic_vector(2 downto 0);
+ signal reg_write_data: std_logic_vector(7 downto 0);
  signal sign_ext_im,read_data2,zero_ext_im,imm_ext: std_logic_vector(15 downto 0);
  signal JRControl: std_logic;
  signal ALU_Control: std_logic_vector(2 downto 0);

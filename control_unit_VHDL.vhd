@@ -15,6 +15,7 @@ architecture Behavioral of control_unit_VHDL is
 begin
 process(reset,opcode)
 begin
+ 
  if(reset = '1') then
    reg_dst <= "00";
    mem_to_reg <= "00";
