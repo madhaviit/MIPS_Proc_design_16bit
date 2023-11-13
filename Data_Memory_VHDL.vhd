@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.numeric_std.all;  
--- VHDL code for the data Memory of the MIPS Processor
+
 entity Data_Memory_VHDL is
 port (
  clk: in std_logic;

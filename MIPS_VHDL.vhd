@@ -89,7 +89,7 @@ register_file: entity work.register_file_VHDL --mapping the set variables to act
  reg_read_addr_2 => reg_read_addr_2,
  reg_read_data_2 => reg_read_data_2
  );
--- sign extend
+-- sign extend is required because we want to move backwards in some cases so we may need to add for example -4$(reg_addr). That is why
  tmp1 <= (others => instr(6));
  sign_ext_im <=  tmp1 & instr(6 downto 0); 
  zero_ext_im <= "000000000"& instr(6 downto 0); 
