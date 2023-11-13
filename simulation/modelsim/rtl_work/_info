@@ -1,0 +1,360 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quartus/ProcDes/simulation/modelsim
+Ealu_control_vhdl
+Z1 w1699339921
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z4 8D:/Quartus/ProcDes/ALU_Control_VHDL.vhd
+Z5 FD:/Quartus/ProcDes/ALU_Control_VHDL.vhd
+l0
+L6 1
+VM=SabHz>gTZZ4b70]R?`C3
+!s100 L1S]Sn^neQ]b4?FYLZ0<V0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1699889799
+!i10b 1
+Z8 !s108 1699889798.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/ALU_Control_VHDL.vhd|
+Z10 !s107 D:/Quartus/ProcDes/ALU_Control_VHDL.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+Z13 DEx4 work 16 alu_control_vhdl 0 22 M=SabHz>gTZZ4b70]R?`C3
+!i122 2
+l15
+L14 17
+VSF07V>e7C2JHjMS>T:?F72
+!s100 o5=NTA[EWlARd@IKAOhGK3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ealu_vhdl
+Z14 w1699339895
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z16 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+R2
+R3
+!i122 1
+R0
+Z17 8D:/Quartus/ProcDes/ALU_VHDL.vhd
+Z18 FD:/Quartus/ProcDes/ALU_VHDL.vhd
+l0
+L7 1
+V;>89HH287KHhlhjBKVJm43
+!s100 MWYS=<:_zJ^naN2jcQen@3
+R6
+31
+Z19 !s110 1699889798
+!i10b 1
+R8
+Z20 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/ALU_VHDL.vhd|
+Z21 !s107 D:/Quartus/ProcDes/ALU_VHDL.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R15
+R16
+R2
+R3
+Z22 DEx4 work 8 alu_vhdl 0 22 ;>89HH287KHhlhjBKVJm43
+!i122 1
+l18
+L16 26
+VWccH56Xlh2[k=JKo02kQ61
+!s100 knzZe8DcG0<Om8cJNhNMR1
+R6
+31
+R19
+!i10b 1
+R8
+R20
+R21
+!i113 1
+R11
+R12
+Econtrol_unit_vhdl
+Z23 w1699340002
+R2
+R3
+!i122 4
+R0
+Z24 8D:/Quartus/ProcDes/control_unit_VHDL.vhd
+Z25 FD:/Quartus/ProcDes/control_unit_VHDL.vhd
+l0
+L6 1
+VWnBc4_eNNk^M@@A7bXXWA3
+!s100 :ghXMlCNINBaT3j0h5o5j0
+R6
+31
+R7
+!i10b 1
+Z26 !s108 1699889799.000000
+Z27 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/control_unit_VHDL.vhd|
+Z28 !s107 D:/Quartus/ProcDes/control_unit_VHDL.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+Z29 DEx4 work 17 control_unit_vhdl 0 22 WnBc4_eNNk^M@@A7bXXWA3
+!i122 4
+l17
+L15 122
+Ve=U4zf`l6JIz^6W>]A1fb3
+!s100 658m8O_o=f4O9RhVSBPI13
+R6
+31
+R7
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R11
+R12
+Edata_memory_vhdl
+Z30 w1699339815
+Z31 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 0
+R0
+Z32 8D:/Quartus/ProcDes/Data_Memory_VHDL.vhd
+Z33 FD:/Quartus/ProcDes/Data_Memory_VHDL.vhd
+l0
+L7 1
+V;lSG`:N1H@T8SQN]Ml@NA3
+!s100 hmZO4PlOF^IjKD<2mU2Em2
+R6
+31
+R19
+!i10b 1
+R8
+Z34 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/Data_Memory_VHDL.vhd|
+Z35 !s107 D:/Quartus/ProcDes/Data_Memory_VHDL.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R31
+R2
+R3
+Z36 DEx4 work 16 data_memory_vhdl 0 22 ;lSG`:N1H@T8SQN]Ml@NA3
+!i122 0
+l22
+L17 19
+V;17G3j;@lNE]kKeP7l2m90
+!s100 7a9WhoI6KZWOGCI5IYFc<1
+R6
+31
+R19
+!i10b 1
+R8
+R34
+R35
+!i113 1
+R11
+R12
+Einstruction_memory_vhdl
+Z37 w1699340034
+R31
+R2
+R3
+!i122 5
+R0
+Z38 8D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd
+Z39 FD:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd
+l0
+L7 1
+V24T4bbFk:K2@R6AaZ@inz0
+!s100 Z5U?UeEj;`oQag9@Mz@i=0
+R6
+31
+R7
+!i10b 1
+R26
+Z40 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd|
+Z41 !s107 D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R31
+R2
+R3
+Z42 DEx4 work 23 instruction_memory_vhdl 0 22 24T4bbFk:K2@R6AaZ@inz0
+!i122 5
+l42
+L14 34
+V6LH3U4j9MbI6L6WOz8Sbn0
+!s100 c<F;[CFm@I?ibhZ0nnkd^2
+R6
+31
+R7
+!i10b 1
+R26
+R40
+R41
+!i113 1
+R11
+R12
+Emips_vhdl
+Z43 w1699340057
+R15
+R16
+R2
+R3
+!i122 6
+R0
+Z44 8D:/Quartus/ProcDes/MIPS_VHDL.vhd
+Z45 FD:/Quartus/ProcDes/MIPS_VHDL.vhd
+l0
+L6 1
+V;N;XPiiWNk7dO@TPf]^Yd2
+!s100 ?MZQzEeY>@YMk>gL9;:mZ3
+R6
+31
+R7
+!i10b 1
+R26
+Z46 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/MIPS_VHDL.vhd|
+Z47 !s107 D:/Quartus/ProcDes/MIPS_VHDL.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R36
+R22
+R13
+Z48 DEx4 work 18 register_file_vhdl 0 22 dYh=iLc_nMBNlCnc@WzaN2
+R29
+R31
+R42
+R15
+R16
+R2
+R3
+DEx4 work 9 mips_vhdl 0 22 ;N;XPiiWNk7dO@TPf]^Yd2
+!i122 6
+l37
+L13 141
+VBS7f@d6Y^2g:C3]OYc<oH3
+!s100 [Dd3I0QnSESOE=]KPNoB[1
+R6
+31
+R7
+!i10b 1
+R26
+R46
+R47
+!i113 1
+R11
+R12
+Eregister_file_vhdl
+Z49 w1699339957
+R31
+R2
+R3
+!i122 3
+R0
+Z50 8D:/Quartus/ProcDes/register_file_VHDL.vhd
+Z51 FD:/Quartus/ProcDes/register_file_VHDL.vhd
+l0
+L7 1
+VdYh=iLc_nMBNlCnc@WzaN2
+!s100 ECi[5fC<PC[nU^bf3k2PG2
+R6
+31
+R7
+!i10b 1
+R26
+Z52 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/register_file_VHDL.vhd|
+Z53 !s107 D:/Quartus/ProcDes/register_file_VHDL.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R31
+R2
+R3
+R48
+!i122 3
+l23
+L20 26
+Va^oB^NdQkNi:mN:;f7cjA0
+!s100 cX^5foC:PnBaoPF;JWEPQ2
+R6
+31
+R7
+!i10b 1
+R26
+R52
+R53
+!i113 1
+R11
+R12
+Etb_mips_vhdl
+Z54 w1699889784
+R2
+R3
+!i122 7
+R0
+Z55 8D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd
+Z56 FD:/Quartus/ProcDes/tb_MIPS_VHDL.vhd
+l0
+L6 1
+Vg7n3V8RFm>UcHVncL_E]30
+!s100 Ngcl?DWb@Y[`8J0OdJ=:d2
+R6
+31
+R7
+!i10b 1
+R26
+Z57 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd|
+!s107 D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 12 tb_mips_vhdl 0 22 g7n3V8RFm>UcHVncL_E]30
+!i122 7
+l27
+L9 48
+V_LzoejS`=V2UUbR^g50aa0
+!s100 K>VT[mHYk4_=oMD>l;>JV3
+R6
+31
+R7
+!i10b 1
+R26
+R57
+Z58 !s107 D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd|
+!i113 1
+R11
+R12

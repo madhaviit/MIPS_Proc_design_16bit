@@ -1,0 +1,102 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quartus/ProcDes/simulation/modelsim
+vhard_block
+Z1 !s110 1699887395
+!i10b 1
+!s100 NAiS0k1dF^<MT0`?fC@TY3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IUYKT=`DbJ3<GJ5iMGP?bU2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1699885688
+Z5 8ProcDes.vo
+Z6 FProcDes.vo
+!i122 0
+L0 184421 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1699887393.000000
+Z9 !s107 ProcDes.vo|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|ProcDes.vo|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work +incdir+.
+Z13 tCvgOpt 0
+vMIPS_VHDL
+R1
+!i10b 1
+!s100 <hoN5^;o@jLmUZFfZ8O;H2
+R2
+I2@C_0NDaj75O[^PIGanM^2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 32 184388
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@m@i@p@s_@v@h@d@l
+Etb_mips_vhdl
+Z14 w1699345520
+Z15 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z16 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z17 8D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd
+Z18 FD:/Quartus/ProcDes/tb_MIPS_VHDL.vhd
+l0
+L6 1
+Vg7n3V8RFm>UcHVncL_E]30
+!s100 Ngcl?DWb@Y[`8J0OdJ=:d2
+Z19 OV;C;2020.1;71
+31
+R1
+!i10b 1
+Z20 !s108 1699887395.000000
+Z21 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd|
+!s107 D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd|
+!i113 1
+Z22 o-93 -work work
+Z23 tExplicit 1 CvgOpt 0
+Abehavior
+R15
+R16
+DEx4 work 12 tb_mips_vhdl 0 22 g7n3V8RFm>UcHVncL_E]30
+!i122 1
+l27
+L9 46
+VG@OXDY36EXVeokWKFcn922
+!s100 MiJ>HI>YDnCmAm>c;SDGL2
+R19
+31
+R1
+!i10b 1
+R20
+R21
+Z24 !s107 D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd|
+!i113 1
+R22
+R23

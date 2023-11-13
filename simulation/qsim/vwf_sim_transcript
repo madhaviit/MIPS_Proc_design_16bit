@@ -1,0 +1,1730 @@
+Determining the location of the ModelSim executable...
+
+Using: D:\Quartus\modelsim_ase\win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProcDes -c ProcDes --vector_source="D:/Quartus/ProcDes/Waveform2.vwf" --testbench_file="D:/Quartus/ProcDes/simulation/qsim/Waveform2.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Mon Nov 13 20:37:39 2023
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProcDes -c ProcDes --vector_source=D:/Quartus/ProcDes/Waveform2.vwf --testbench_file=D:/Quartus/ProcDes/simulation/qsim/Waveform2.vwf.vht
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+sign
+
+data_2[6]" in design
+
+Completed successfully. 
+
+**** Generating the timing simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="D:/Quartus/ProcDes/simulation/qsim/" ProcDes -c ProcDes
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Mon Nov 13 20:37:41 2023
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=D:/Quartus/ProcDes/simulation/qsim/ ProcDes -c ProcDes
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file ProcDes_6_1200mv_85c_slow.vho in folder "D:/Quartus/ProcDes/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ProcDes_6_1200mv_0c_slow.vho in folder "D:/Quartus/ProcDes/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ProcDes_min_1200mv_0c_fast.vho in folder "D:/Quartus/ProcDes/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ProcDes.vho in folder "D:/Quartus/ProcDes/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ProcDes_6_1200mv_85c_vhd_slow.sdo in folder "D:/Quartus/ProcDes/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ProcDes_6_1200mv_0c_vhd_slow.sdo in folder "D:/Quartus/ProcDes/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ProcDes_min_1200mv_0c_vhd_fast.sdo in folder "D:/Quartus/ProcDes/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ProcDes_vhd.sdo in folder "D:/Quartus/ProcDes/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4700 megabytes
+    Info: Processing ended: Mon Nov 13 20:37:51 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:07
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+D:/Quartus/ProcDes/simulation/qsim/ProcDes.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+D:/Quartus/modelsim_ase/win32aloem/vsim -c -do ProcDes.do
+
+Reading pref.tcl
+
+# 2020.1
+
+
+# do ProcDes.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+
+# Start time: 20:37:52 on Nov 13,2023
+# vcom -work work ProcDes.vho 
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity MIPS_VHDL
+# -- Compiling architecture structure of MIPS_VHDL
+
+# End time: 20:37:57 on Nov 13,2023, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:37:57 on Nov 13,2023
+# vcom -work work Waveform2.vwf.vht 
+
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_VHDL_vhd_vec_tst
+# -- Compiling architecture MIPS_VHDL_arch of MIPS_VHDL_vhd_vec_tst
+# End time: 20:37:58 on Nov 13,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+# vsim -c -t 1ps -sdfmax "MIPS_VHDL_vhd_vec_tst/i1=ProcDes_vhd.sdo" -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MIPS_VHDL_vhd_vec_tst 
+# Start time: 20:37:58 on Nov 13,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mips_vhdl_vhd_vec_tst(mips_vhdl_arch)
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.mips_vhdl(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# Loading instances from ProcDes_vhd.sdo
+# Loading timing data from ProcDes_vhd.sdo
+# ** Warning: Design size of 1259353 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_vhdl_vhd_vec_tst File: Waveform2.vwf.vht
+# after#35
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# End time: 20:38:08 on Nov 13,2023, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading D:/Quartus/ProcDes/Waveform2.vwf...
+
+Reading D:/Quartus/ProcDes/simulation/qsim/ProcDes.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: Add0 - signal not found in VCD.
+
+Warning: Add1 - signal not found in VCD.
+
+Warning: Add2 - signal not found in VCD.
+
+Warning: Add3 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu - signal not found in VCD.
+
+Warning: ALU_Control[2] - signal not found in VCD.
+
+Warning: ALU_Control[1] - signal not found in VCD.
+
+Warning: ALU_Control[0] - signal not found in VCD.
+
+Warning: alu_op[1] - signal not found in VCD.
+
+Warning: alu_op[0] - signal not found in VCD.
+
+Warning: ALU_out[15] - signal not found in VCD.
+
+Warning: ALU_out[14] - signal not found in VCD.
+
+Warning: ALU_out[13] - signal not found in VCD.
+
+Warning: ALU_out[12] - signal not found in VCD.
+
+Warning: ALU_out[11] - signal not found in VCD.
+
+Warning: ALU_out[10] - signal not found in VCD.
+
+Warning: ALU_out[9] - signal not found in VCD.
+
+Warning: ALU_out[8] - signal not found in VCD.
+
+Warning: ALU_out[7] - signal not found in VCD.
+
+Warning: ALU_out[6] - signal not found in VCD.
+
+Warning: ALU_out[5] - signal not found in VCD.
+
+Warning: ALU_out[4] - signal not found in VCD.
+
+Warning: ALU_out[3] - signal not found in VCD.
+
+Warning: ALU_out[2] - signal not found in VCD.
+
+Warning: ALU_out[1] - signal not found in VCD.
+
+Warning: ALU_out[0] - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl - signal not found in VCD.
+
+Warning: beq_control - signal not found in VCD.
+
+Warning: control_unit_VHDL:control - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory - signal not found in VCD.
+
+Warning: Equal0 - signal not found in VCD.
+
+Warning: Equal1 - signal not found in VCD.
+
+Warning: Equal2 - signal not found in VCD.
+
+Warning: Equal3 - signal not found in VCD.
+
+Warning: Equal4 - signal not found in VCD.
+
+Warning: Equal5 - signal not found in VCD.
+
+Warning: im_shift_1[15] - signal not found in VCD.
+
+Warning: im_shift_1[14] - signal not found in VCD.
+
+Warning: im_shift_1[13] - signal not found in VCD.
+
+Warning: im_shift_1[12] - signal not found in VCD.
+
+Warning: im_shift_1[11] - signal not found in VCD.
+
+Warning: im_shift_1[10] - signal not found in VCD.
+
+Warning: im_shift_1[9] - signal not found in VCD.
+
+Warning: im_shift_1[8] - signal not found in VCD.
+
+Warning: im_shift_1[7] - signal not found in VCD.
+
+Warning: im_shift_1[6] - signal not found in VCD.
+
+Warning: im_shift_1[5] - signal not found in VCD.
+
+Warning: im_shift_1[4] - signal not found in VCD.
+
+Warning: im_shift_1[3] - signal not found in VCD.
+
+Warning: im_shift_1[2] - signal not found in VCD.
+
+Warning: im_shift_1[1] - signal not found in VCD.
+
+Warning: im_shift_1[0] - signal not found in VCD.
+
+Warning: imm_ext[15] - signal not found in VCD.
+
+Warning: imm_ext[14] - signal not found in VCD.
+
+Warning: imm_ext[13] - signal not found in VCD.
+
+Warning: imm_ext[12] - signal not found in VCD.
+
+Warning: imm_ext[11] - signal not found in VCD.
+
+Warning: imm_ext[10] - signal not found in VCD.
+
+Warning: imm_ext[9] - signal not found in VCD.
+
+Warning: imm_ext[8] - signal not found in VCD.
+
+Warning: imm_ext[7] - signal not found in VCD.
+
+Warning: imm_ext[6] - signal not found in VCD.
+
+Warning: imm_ext[5] - signal not found in VCD.
+
+Warning: imm_ext[4] - signal not found in VCD.
+
+Warning: imm_ext[3] - signal not found in VCD.
+
+Warning: imm_ext[2] - signal not found in VCD.
+
+Warning: imm_ext[1] - signal not found in VCD.
+
+Warning: imm_ext[0] - signal not found in VCD.
+
+Warning: instr[15] - signal not found in VCD.
+
+Warning: instr[14] - signal not found in VCD.
+
+Warning: instr[13] - signal not found in VCD.
+
+Warning: instr[12] - signal not found in VCD.
+
+Warning: instr[11] - signal not found in VCD.
+
+Warning: instr[10] - signal not found in VCD.
+
+Warning: instr[9] - signal not found in VCD.
+
+Warning: instr[8] - signal not found in VCD.
+
+Warning: instr[7] - signal not found in VCD.
+
+Warning: instr[6] - signal not found in VCD.
+
+Warning: instr[5] - signal not found in VCD.
+
+Warning: instr[4] - signal not found in VCD.
+
+Warning: instr[3] - signal not found in VCD.
+
+Warning: instr[2] - signal not found in VCD.
+
+Warning: instr[1] - signal not found in VCD.
+
+Warning: instr[0] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory - signal not found in VCD.
+
+Warning: jump_shift_1[14] - signal not found in VCD.
+
+Warning: jump_shift_1[13] - signal not found in VCD.
+
+Warning: jump_shift_1[12] - signal not found in VCD.
+
+Warning: jump_shift_1[11] - signal not found in VCD.
+
+Warning: jump_shift_1[10] - signal not found in VCD.
+
+Warning: jump_shift_1[9] - signal not found in VCD.
+
+Warning: jump_shift_1[8] - signal not found in VCD.
+
+Warning: jump_shift_1[7] - signal not found in VCD.
+
+Warning: jump_shift_1[6] - signal not found in VCD.
+
+Warning: jump_shift_1[5] - signal not found in VCD.
+
+Warning: jump_shift_1[4] - signal not found in VCD.
+
+Warning: jump_shift_1[3] - signal not found in VCD.
+
+Warning: jump_shift_1[2] - signal not found in VCD.
+
+Warning: jump_shift_1[1] - signal not found in VCD.
+
+Warning: jump_shift_1[0] - signal not found in VCD.
+
+Warning: mem_read_data[15] - signal not found in VCD.
+
+Warning: mem_read_data[14] - signal not found in VCD.
+
+Warning: mem_read_data[13] - signal not found in VCD.
+
+Warning: mem_read_data[12] - signal not found in VCD.
+
+Warning: mem_read_data[11] - signal not found in VCD.
+
+Warning: mem_read_data[10] - signal not found in VCD.
+
+Warning: mem_read_data[9] - signal not found in VCD.
+
+Warning: mem_read_data[8] - signal not found in VCD.
+
+Warning: mem_read_data[7] - signal not found in VCD.
+
+Warning: mem_read_data[6] - signal not found in VCD.
+
+Warning: mem_read_data[5] - signal not found in VCD.
+
+Warning: mem_read_data[4] - signal not found in VCD.
+
+Warning: mem_read_data[3] - signal not found in VCD.
+
+Warning: mem_read_data[2] - signal not found in VCD.
+
+Warning: mem_read_data[1] - signal not found in VCD.
+
+Warning: mem_read_data[0] - signal not found in VCD.
+
+Warning: mem_to_reg[1] - signal not found in VCD.
+
+Warning: mem_to_reg[0] - signal not found in VCD.
+
+Warning: no_sign_ext[15] - signal not found in VCD.
+
+Warning: no_sign_ext[14] - signal not found in VCD.
+
+Warning: no_sign_ext[13] - signal not found in VCD.
+
+Warning: no_sign_ext[12] - signal not found in VCD.
+
+Warning: no_sign_ext[11] - signal not found in VCD.
+
+Warning: no_sign_ext[10] - signal not found in VCD.
+
+Warning: no_sign_ext[9] - signal not found in VCD.
+
+Warning: no_sign_ext[8] - signal not found in VCD.
+
+Warning: no_sign_ext[7] - signal not found in VCD.
+
+Warning: no_sign_ext[6] - signal not found in VCD.
+
+Warning: no_sign_ext[5] - signal not found in VCD.
+
+Warning: no_sign_ext[4] - signal not found in VCD.
+
+Warning: no_sign_ext[3] - signal not found in VCD.
+
+Warning: no_sign_ext[2] - signal not found in VCD.
+
+Warning: no_sign_ext[1] - signal not found in VCD.
+
+Warning: no_sign_ext[0] - signal not found in VCD.
+
+Warning: pc2[15] - signal not found in VCD.
+
+Warning: pc2[14] - signal not found in VCD.
+
+Warning: pc2[13] - signal not found in VCD.
+
+Warning: pc2[12] - signal not found in VCD.
+
+Warning: pc2[11] - signal not found in VCD.
+
+Warning: pc2[10] - signal not found in VCD.
+
+Warning: pc2[9] - signal not found in VCD.
+
+Warning: pc2[8] - signal not found in VCD.
+
+Warning: pc2[7] - signal not found in VCD.
+
+Warning: pc2[6] - signal not found in VCD.
+
+Warning: pc2[5] - signal not found in VCD.
+
+Warning: pc2[4] - signal not found in VCD.
+
+Warning: pc2[3] - signal not found in VCD.
+
+Warning: pc2[2] - signal not found in VCD.
+
+Warning: pc2[1] - signal not found in VCD.
+
+Warning: pc2[0] - signal not found in VCD.
+
+Warning: PC_4beq[15] - signal not found in VCD.
+
+Warning: PC_4beq[14] - signal not found in VCD.
+
+Warning: PC_4beq[13] - signal not found in VCD.
+
+Warning: PC_4beq[12] - signal not found in VCD.
+
+Warning: PC_4beq[11] - signal not found in VCD.
+
+Warning: PC_4beq[10] - signal not found in VCD.
+
+Warning: PC_4beq[9] - signal not found in VCD.
+
+Warning: PC_4beq[8] - signal not found in VCD.
+
+Warning: PC_4beq[7] - signal not found in VCD.
+
+Warning: PC_4beq[6] - signal not found in VCD.
+
+Warning: PC_4beq[5] - signal not found in VCD.
+
+Warning: PC_4beq[4] - signal not found in VCD.
+
+Warning: PC_4beq[3] - signal not found in VCD.
+
+Warning: PC_4beq[2] - signal not found in VCD.
+
+Warning: PC_4beq[1] - signal not found in VCD.
+
+Warning: PC_4beq[0] - signal not found in VCD.
+
+Warning: PC_4beqj[15] - signal not found in VCD.
+
+Warning: PC_4beqj[14] - signal not found in VCD.
+
+Warning: PC_4beqj[13] - signal not found in VCD.
+
+Warning: PC_4beqj[12] - signal not found in VCD.
+
+Warning: PC_4beqj[11] - signal not found in VCD.
+
+Warning: PC_4beqj[10] - signal not found in VCD.
+
+Warning: PC_4beqj[9] - signal not found in VCD.
+
+Warning: PC_4beqj[8] - signal not found in VCD.
+
+Warning: PC_4beqj[7] - signal not found in VCD.
+
+Warning: PC_4beqj[6] - signal not found in VCD.
+
+Warning: PC_4beqj[5] - signal not found in VCD.
+
+Warning: PC_4beqj[4] - signal not found in VCD.
+
+Warning: PC_4beqj[3] - signal not found in VCD.
+
+Warning: PC_4beqj[2] - signal not found in VCD.
+
+Warning: PC_4beqj[1] - signal not found in VCD.
+
+Warning: PC_4beqj[0] - signal not found in VCD.
+
+Warning: PC_beq[15] - signal not found in VCD.
+
+Warning: PC_beq[14] - signal not found in VCD.
+
+Warning: PC_beq[13] - signal not found in VCD.
+
+Warning: PC_beq[12] - signal not found in VCD.
+
+Warning: PC_beq[11] - signal not found in VCD.
+
+Warning: PC_beq[10] - signal not found in VCD.
+
+Warning: PC_beq[9] - signal not found in VCD.
+
+Warning: PC_beq[8] - signal not found in VCD.
+
+Warning: PC_beq[7] - signal not found in VCD.
+
+Warning: PC_beq[6] - signal not found in VCD.
+
+Warning: PC_beq[5] - signal not found in VCD.
+
+Warning: PC_beq[4] - signal not found in VCD.
+
+Warning: PC_beq[3] - signal not found in VCD.
+
+Warning: PC_beq[2] - signal not found in VCD.
+
+Warning: PC_beq[1] - signal not found in VCD.
+
+Warning: PC_beq[0] - signal not found in VCD.
+
+Warning: PC_j[15] - signal not found in VCD.
+
+Warning: PC_j[14] - signal not found in VCD.
+
+Warning: PC_j[13] - signal not found in VCD.
+
+Warning: PC_j[12] - signal not found in VCD.
+
+Warning: PC_j[11] - signal not found in VCD.
+
+Warning: PC_j[10] - signal not found in VCD.
+
+Warning: PC_j[9] - signal not found in VCD.
+
+Warning: PC_j[8] - signal not found in VCD.
+
+Warning: PC_j[7] - signal not found in VCD.
+
+Warning: PC_j[6] - signal not found in VCD.
+
+Warning: PC_j[5] - signal not found in VCD.
+
+Warning: PC_j[4] - signal not found in VCD.
+
+Warning: PC_j[3] - signal not found in VCD.
+
+Warning: PC_j[2] - signal not found in VCD.
+
+Warning: PC_j[1] - signal not found in VCD.
+
+Warning: PC_j[0] - signal not found in VCD.
+
+Warning: PC_jr[15] - signal not found in VCD.
+
+Warning: PC_jr[14] - signal not found in VCD.
+
+Warning: PC_jr[13] - signal not found in VCD.
+
+Warning: PC_jr[12] - signal not found in VCD.
+
+Warning: PC_jr[11] - signal not found in VCD.
+
+Warning: PC_jr[10] - signal not found in VCD.
+
+Warning: PC_jr[9] - signal not found in VCD.
+
+Warning: PC_jr[8] - signal not found in VCD.
+
+Warning: PC_jr[7] - signal not found in VCD.
+
+Warning: PC_jr[6] - signal not found in VCD.
+
+Warning: PC_jr[5] - signal not found in VCD.
+
+Warning: PC_jr[4] - signal not found in VCD.
+
+Warning: PC_jr[3] - signal not found in VCD.
+
+Warning: PC_jr[2] - signal not found in VCD.
+
+Warning: PC_jr[1] - signal not found in VCD.
+
+Warning: PC_jr[0] - signal not found in VCD.
+
+Warning: read_data2[15] - signal not found in VCD.
+
+Warning: read_data2[14] - signal not found in VCD.
+
+Warning: read_data2[13] - signal not found in VCD.
+
+Warning: read_data2[12] - signal not found in VCD.
+
+Warning: read_data2[11] - signal not found in VCD.
+
+Warning: read_data2[10] - signal not found in VCD.
+
+Warning: read_data2[9] - signal not found in VCD.
+
+Warning: read_data2[8] - signal not found in VCD.
+
+Warning: read_data2[7] - signal not found in VCD.
+
+Warning: read_data2[6] - signal not found in VCD.
+
+Warning: read_data2[5] - signal not found in VCD.
+
+Warning: read_data2[4] - signal not found in VCD.
+
+Warning: read_data2[3] - signal not found in VCD.
+
+Warning: read_data2[2] - signal not found in VCD.
+
+Warning: read_data2[1] - signal not found in VCD.
+
+Warning: read_data2[0] - signal not found in VCD.
+
+Warning: reg_dst[1] - signal not found in VCD.
+
+Warning: reg_dst[0] - signal not found in VCD.
+
+Warning: reg_read_addr_1[2] - signal not found in VCD.
+
+Warning: reg_read_addr_1[1] - signal not found in VCD.
+
+Warning: reg_read_addr_1[0] - signal not found in VCD.
+
+Warning: reg_read_addr_2[2] - signal not found in VCD.
+
+Warning: reg_read_addr_2[1] - signal not found in VCD.
+
+Warning: reg_read_addr_2[0] - signal not found in VCD.
+
+Warning: reg_read_data_1[15] - signal not found in VCD.
+
+Warning: reg_read_data_1[14] - signal not found in VCD.
+
+Warning: reg_read_data_1[13] - signal not found in VCD.
+
+Warning: reg_read_data_1[12] - signal not found in VCD.
+
+Warning: reg_read_data_1[11] - signal not found in VCD.
+
+Warning: reg_read_data_1[10] - signal not found in VCD.
+
+Warning: reg_read_data_1[9] - signal not found in VCD.
+
+Warning: reg_read_data_1[8] - signal not found in VCD.
+
+Warning: reg_read_data_1[7] - signal not found in VCD.
+
+Warning: reg_read_data_1[6] - signal not found in VCD.
+
+Warning: reg_read_data_1[5] - signal not found in VCD.
+
+Warning: reg_read_data_1[4] - signal not found in VCD.
+
+Warning: reg_read_data_1[3] - signal not found in VCD.
+
+Warning: reg_read_data_1[2] - signal not found in VCD.
+
+Warning: reg_read_data_1[1] - signal not found in VCD.
+
+Warning: reg_read_data_1[0] - signal not found in VCD.
+
+Warning: reg_read_data_2[15] - signal not found in VCD.
+
+Warning: reg_read_data_2[14] - signal not found in VCD.
+
+Warning: reg_read_data_2[13] - signal not found in VCD.
+
+Warning: reg_read_data_2[12] - signal not found in VCD.
+
+Warning: reg_read_data_2[11] - signal not found in VCD.
+
+Warning: reg_read_data_2[10] - signal not found in VCD.
+
+Warning: reg_read_data_2[9] - signal not found in VCD.
+
+Warning: reg_read_data_2[8] - signal not found in VCD.
+
+Warning: reg_read_data_2[7] - signal not found in VCD.
+
+Warning: reg_read_data_2[6] - signal not found in VCD.
+
+Warning: reg_read_data_2[5] - signal not found in VCD.
+
+Warning: reg_read_data_2[4] - signal not found in VCD.
+
+Warning: reg_read_data_2[3] - signal not found in VCD.
+
+Warning: reg_read_data_2[2] - signal not found in VCD.
+
+Warning: reg_read_data_2[1] - signal not found in VCD.
+
+Warning: reg_read_data_2[0] - signal not found in VCD.
+
+Warning: reg_write_data[15] - signal not found in VCD.
+
+Warning: reg_write_data[14] - signal not found in VCD.
+
+Warning: reg_write_data[13] - signal not found in VCD.
+
+Warning: reg_write_data[12] - signal not found in VCD.
+
+Warning: reg_write_data[11] - signal not found in VCD.
+
+Warning: reg_write_data[10] - signal not found in VCD.
+
+Warning: reg_write_data[9] - signal not found in VCD.
+
+Warning: reg_write_data[8] - signal not found in VCD.
+
+Warning: reg_write_data[7] - signal not found in VCD.
+
+Warning: reg_write_data[6] - signal not found in VCD.
+
+Warning: reg_write_data[5] - signal not found in VCD.
+
+Warning: reg_write_data[4] - signal not found in VCD.
+
+Warning: reg_write_data[3] - signal not found in VCD.
+
+Warning: reg_write_data[2] - signal not found in VCD.
+
+Warning: reg_write_data[1] - signal not found in VCD.
+
+Warning: reg_write_data[0] - signal not found in VCD.
+
+Warning: reg_write_dest[2] - signal not found in VCD.
+
+Warning: reg_write_dest[1] - signal not found in VCD.
+
+Warning: reg_write_dest[0] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file - signal not found in VCD.
+
+Warning: sign_ext_im[15] - signal not found in VCD.
+
+Warning: sign_ext_im[14] - signal not found in VCD.
+
+Warning: sign_ext_im[13] - signal not found in VCD.
+
+Warning: sign_ext_im[12] - signal not found in VCD.
+
+Warning: sign_ext_im[11] - signal not found in VCD.
+
+Warning: sign_ext_im[10] - signal not found in VCD.
+
+Warning: sign_ext_im[9] - signal not found in VCD.
+
+Warning: sign_ext_im[8] - signal not found in VCD.
+
+Warning: sign_ext_im[7] - signal not found in VCD.
+
+Warning: sign_ext_im[6] - signal not found in VCD.
+
+Warning: sign_ext_im[5] - signal not found in VCD.
+
+Warning: sign_ext_im[4] - signal not found in VCD.
+
+Warning: sign_ext_im[3] - signal not found in VCD.
+
+Warning: sign_ext_im[2] - signal not found in VCD.
+
+Warning: sign_ext_im[1] - signal not found in VCD.
+
+Warning: sign_ext_im[0] - signal not found in VCD.
+
+Warning: tmp1[8] - signal not found in VCD.
+
+Warning: tmp1[7] - signal not found in VCD.
+
+Warning: tmp1[6] - signal not found in VCD.
+
+Warning: tmp1[5] - signal not found in VCD.
+
+Warning: tmp1[4] - signal not found in VCD.
+
+Warning: tmp1[3] - signal not found in VCD.
+
+Warning: tmp1[2] - signal not found in VCD.
+
+Warning: tmp1[1] - signal not found in VCD.
+
+Warning: tmp1[0] - signal not found in VCD.
+
+Warning: zero_ext_im[15] - signal not found in VCD.
+
+Warning: zero_ext_im[14] - signal not found in VCD.
+
+Warning: zero_ext_im[13] - signal not found in VCD.
+
+Warning: zero_ext_im[12] - signal not found in VCD.
+
+Warning: zero_ext_im[11] - signal not found in VCD.
+
+Warning: zero_ext_im[10] - signal not found in VCD.
+
+Warning: zero_ext_im[9] - signal not found in VCD.
+
+Warning: zero_ext_im[8] - signal not found in VCD.
+
+Warning: zero_ext_im[7] - signal not found in VCD.
+
+Warning: zero_ext_im[6] - signal not found in VCD.
+
+Warning: zero_ext_im[5] - signal not found in VCD.
+
+Warning: zero_ext_im[4] - signal not found in VCD.
+
+Warning: zero_ext_im[3] - signal not found in VCD.
+
+Warning: zero_ext_im[2] - signal not found in VCD.
+
+Warning: zero_ext_im[1] - signal not found in VCD.
+
+Warning: zero_ext_im[0] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[15] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[14] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[13] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[12] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[11] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[10] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[9] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[8] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[7] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[6] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[5] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[4] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[3] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[2] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[1] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|a[0] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Add0 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Add1 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_control[2] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_control[1] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_control[0] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[15] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[14] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[13] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[12] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[11] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[10] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[9] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[8] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[7] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[6] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[5] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[4] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[3] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[2] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[1] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|alu_result[0] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[15] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[14] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[13] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[12] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[11] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[10] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[9] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[8] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[7] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[6] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[5] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[4] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[3] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[2] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[1] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|b[0] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Equal0 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|LessThan0 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux0 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux1 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux2 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux3 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux4 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux5 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux6 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux7 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux8 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux9 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux10 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux11 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux12 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux13 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux14 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|Mux15 - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[15] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[14] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[13] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[12] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[11] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[10] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[9] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[8] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[7] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[6] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[5] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[4] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[3] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[2] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[1] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|result[0] - signal not found in VCD.
+
+Warning: ALU_VHDL:alu|zero - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|ALU_Control[2] - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|ALU_Control[1] - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|ALU_Control[0] - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|ALU_Funct[2] - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|ALU_Funct[1] - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|ALU_Funct[0] - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|ALUOp[1] - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|ALUOp[0] - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|Mux0 - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|Mux1 - signal not found in VCD.
+
+Warning: ALU_Control_VHDL:ALUControl|Mux2 - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|alu_op[1] - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|alu_op[0] - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|alu_src - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|branch - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|jump - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|mem_read - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|mem_to_reg[1] - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|mem_to_reg[0] - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|mem_write - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|Mux0 - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|Mux1 - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|Mux2 - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|Mux3 - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|Mux4 - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|Mux5 - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|Mux6 - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|Mux7 - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|Mux8 - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|opcode[2] - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|opcode[1] - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|opcode[0] - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|reg_dst[1] - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|reg_dst[0] - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|reg_write - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|reset - signal not found in VCD.
+
+Warning: control_unit_VHDL:control|sign_or_zero - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|clk - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[15] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[14] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[13] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[12] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[11] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[10] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[9] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[8] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[7] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[6] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[5] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[4] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[3] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[2] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[1] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_access_addr[0] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[15] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[14] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[13] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[12] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[11] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[10] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[9] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[8] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[7] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[6] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[5] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[4] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[3] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[2] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[1] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_read_data[0] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[15] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[14] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[13] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[12] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[11] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[10] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[9] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[8] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[7] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[6] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[5] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[4] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[3] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[2] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[1] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_data[0] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|mem_write_en - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[15] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[14] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[13] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[12] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[11] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[10] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[9] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[8] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[7] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[6] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[5] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[4] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[3] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[2] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[1] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.data_a[0] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[15] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[14] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[13] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[12] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[11] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[10] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[9] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[8] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[7] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[6] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[5] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[4] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[3] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[2] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[1] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.q_a[0] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.raddr_a[7] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.raddr_a[6] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.raddr_a[5] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.raddr_a[4] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.raddr_a[3] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.raddr_a[2] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.raddr_a[1] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.raddr_a[0] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.waddr_a[7] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.waddr_a[6] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.waddr_a[5] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.waddr_a[4] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.waddr_a[3] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.waddr_a[2] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.waddr_a[1] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM.waddr_a[0] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|ram_addr[7] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|ram_addr[6] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|ram_addr[5] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|ram_addr[4] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|ram_addr[3] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|ram_addr[2] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|ram_addr[1] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|ram_addr[0] - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~0 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~1 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~2 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~3 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~4 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~5 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~6 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~7 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~8 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~9 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~10 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~11 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~12 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~13 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~14 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~15 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~16 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~17 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~18 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~19 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~20 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~21 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~22 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~23 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~24 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT1 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT2 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT3 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT4 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT5 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT6 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT7 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT8 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT9 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT10 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT11 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT12 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT13 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT14 - signal not found in VCD.
+
+Warning: Data_Memory_VHDL:data_memory|RAM~DATAOUT15 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[15] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[14] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[13] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[12] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[11] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[10] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[9] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[8] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[7] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[6] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[5] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[4] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[3] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[2] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[1] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|instruction[0] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|LessThan0 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux0 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux1 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux2 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux3 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux4 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux5 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux6 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux7 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux8 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux9 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux10 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|Mux11 - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[15] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[14] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[13] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[12] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[11] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[10] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[9] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[8] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[7] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[6] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[5] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[4] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[3] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[2] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[1] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|pc[0] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|rom_addr[3] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|rom_addr[2] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|rom_addr[1] - signal not found in VCD.
+
+Warning: Instruction_Memory_VHDL:Instruction_Memory|rom_addr[0] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|clk - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Decoder0 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Equal0 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Equal1 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux0 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux1 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux2 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux3 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux4 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux5 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux6 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux7 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux8 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux9 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux10 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux11 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux12 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux13 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux14 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux15 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux16 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux17 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux18 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux19 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux20 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux21 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux22 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux23 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux24 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux25 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux26 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux27 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux28 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux29 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux30 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|Mux31 - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_array[7] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_array[6] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_array[5] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_array[4] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_array[3] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_array[2] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_array[1] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_array[0] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_addr_1[2] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_addr_1[1] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_addr_1[0] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_addr_2[2] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_addr_2[1] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_addr_2[0] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[15] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[14] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[13] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[12] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[11] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[10] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[9] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[8] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[7] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[6] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[5] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[4] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[3] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[2] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[1] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_1[0] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[15] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[14] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[13] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[12] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[11] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[10] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[9] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[8] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[7] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[6] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[5] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[4] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[3] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[2] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[1] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_read_data_2[0] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[15] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[14] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[13] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[12] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[11] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[10] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[9] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[8] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[7] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[6] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[5] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[4] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[3] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[2] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[1] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_data[0] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_dest[2] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_dest[1] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_dest[0] - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|reg_write_en - signal not found in VCD.
+
+Warning: register_file_VHDL:register_file|rst - signal not found in VCD.
+
+Writing the resulting VWF to D:/Quartus/ProcDes/simulation/qsim/ProcDes_20231113203808.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

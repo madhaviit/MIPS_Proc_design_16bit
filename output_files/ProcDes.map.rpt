@@ -1,0 +1,386 @@
+Analysis & Synthesis report for ProcDes
+Mon Nov 13 19:55:14 2023
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Nov 13 19:55:14 2023       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; ProcDes                                     ;
+; Top-level Entity Name              ; MIPS_VHDL                                   ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 7,625                                       ;
+;     Total combinational functions  ; 3,446                                       ;
+;     Dedicated logic registers      ; 4,240                                       ;
+; Total registers                    ; 4240                                        ;
+; Total pins                         ; 34                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; MIPS_VHDL          ; ProcDes            ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processors 8-12        ;   0.1%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                          ;
++----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
+; Data_Memory_VHDL.vhd             ; yes             ; User VHDL File  ; D:/Quartus/ProcDes/Data_Memory_VHDL.vhd        ;         ;
+; ALU_VHDL.vhd                     ; yes             ; User VHDL File  ; D:/Quartus/ProcDes/ALU_VHDL.vhd                ;         ;
+; ALU_Control_VHDL.vhd             ; yes             ; User VHDL File  ; D:/Quartus/ProcDes/ALU_Control_VHDL.vhd        ;         ;
+; register_file_VHDL.vhd           ; yes             ; User VHDL File  ; D:/Quartus/ProcDes/register_file_VHDL.vhd      ;         ;
+; control_unit_VHDL.vhd            ; yes             ; User VHDL File  ; D:/Quartus/ProcDes/control_unit_VHDL.vhd       ;         ;
+; Instruction_Memory_VHDL.vhd      ; yes             ; User VHDL File  ; D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd ;         ;
+; MIPS_VHDL.vhd                    ; yes             ; User VHDL File  ; D:/Quartus/ProcDes/MIPS_VHDL.vhd               ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 7,625     ;
+;                                             ;           ;
+; Total combinational functions               ; 3446      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 3010      ;
+;     -- 3 input functions                    ; 395       ;
+;     -- <=2 input functions                  ; 41        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 3365      ;
+;     -- arithmetic mode                      ; 81        ;
+;                                             ;           ;
+; Total registers                             ; 4240      ;
+;     -- Dedicated logic registers            ; 4240      ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 34        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 4240      ;
+; Total fan-out                               ; 26208     ;
+; Average fan-out                             ; 3.38      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
++-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Entity Name             ; Library Name ;
++-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
+; |MIPS_VHDL                                      ; 3446 (183)          ; 4240 (16)                 ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |MIPS_VHDL                                            ; MIPS_VHDL               ; work         ;
+;    |ALU_Control_VHDL:ALUControl|                ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_VHDL|ALU_Control_VHDL:ALUControl                ; ALU_Control_VHDL        ; work         ;
+;    |ALU_VHDL:alu|                               ; 84 (84)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_VHDL|ALU_VHDL:alu                               ; ALU_VHDL                ; work         ;
+;    |Data_Memory_VHDL:data_memory|               ; 2999 (2999)         ; 4096 (4096)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_VHDL|Data_Memory_VHDL:data_memory               ; Data_Memory_VHDL        ; work         ;
+;    |Instruction_Memory_VHDL:Instruction_Memory| ; 26 (26)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_VHDL|Instruction_Memory_VHDL:Instruction_Memory ; Instruction_Memory_VHDL ; work         ;
+;    |control_unit_VHDL:control|                  ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_VHDL|control_unit_VHDL:control                  ; control_unit_VHDL       ; work         ;
+;    |register_file_VHDL:register_file|           ; 142 (142)           ; 128 (128)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_VHDL|register_file_VHDL:register_file           ; register_file_VHDL      ; work         ;
++-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+-------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 4240  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 144   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 4224  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------+
+; Inverted Register Statistics                               ;
++--------------------------------------------------+---------+
+; Inverted Register                                ; Fan out ;
++--------------------------------------------------+---------+
+; register_file_VHDL:register_file|reg_array[2][0] ; 2       ;
+; register_file_VHDL:register_file|reg_array[6][0] ; 1       ;
+; register_file_VHDL:register_file|reg_array[4][0] ; 1       ;
+; register_file_VHDL:register_file|reg_array[0][0] ; 1       ;
+; register_file_VHDL:register_file|reg_array[7][3] ; 1       ;
+; register_file_VHDL:register_file|reg_array[3][2] ; 2       ;
+; register_file_VHDL:register_file|reg_array[5][2] ; 1       ;
+; register_file_VHDL:register_file|reg_array[6][2] ; 1       ;
+; register_file_VHDL:register_file|reg_array[4][2] ; 1       ;
+; register_file_VHDL:register_file|reg_array[1][1] ; 2       ;
+; register_file_VHDL:register_file|reg_array[2][1] ; 2       ;
+; register_file_VHDL:register_file|reg_array[5][1] ; 1       ;
+; register_file_VHDL:register_file|reg_array[6][1] ; 1       ;
+; Total number of inverted registers = 13          ;         ;
++--------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |MIPS_VHDL|pc_current[3]                                        ;
+; 5:1                ; 12 bits   ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; Yes        ; |MIPS_VHDL|pc_current[12]                                       ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; No         ; |MIPS_VHDL|ALU_VHDL:alu|Add0                                    ;
+; 8:1                ; 15 bits   ; 75 LEs        ; 30 LEs               ; 45 LEs                 ; No         ; |MIPS_VHDL|ALU_VHDL:alu|Mux5                                    ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; No         ; |MIPS_VHDL|ALU_VHDL:alu|Add0                                    ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |MIPS_VHDL|register_file_VHDL:register_file|reg_read_data_2[15] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |MIPS_VHDL|reg_write_data[5]                                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MIPS_VHDL|reg_write_dest[0]                                    ;
+; 9:1                ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |MIPS_VHDL|register_file_VHDL:register_file|reg_read_data_1[6]  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 34                          ;
+; cycloneiii_ff         ; 4240                        ;
+;     CLR               ; 15                          ;
+;     CLR SLD           ; 1                           ;
+;     ENA               ; 4096                        ;
+;     ENA CLR           ; 128                         ;
+; cycloneiii_lcell_comb ; 3446                        ;
+;     arith             ; 81                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 15                          ;
+;         3 data inputs ; 65                          ;
+;     normal            ; 3365                        ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 330                         ;
+;         4 data inputs ; 3010                        ;
+;                       ;                             ;
+; Max LUT depth         ; 18.80                       ;
+; Average LUT depth     ; 11.42                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:19     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Mon Nov 13 19:54:40 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcDes -c ProcDes
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file data_memory_vhdl.vhd
+    Info (12022): Found design unit 1: Data_Memory_VHDL-Behavioral File: D:/Quartus/ProcDes/Data_Memory_VHDL.vhd Line: 17
+    Info (12023): Found entity 1: Data_Memory_VHDL File: D:/Quartus/ProcDes/Data_Memory_VHDL.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file alu_vhdl.vhd
+    Info (12022): Found design unit 1: ALU_VHDL-Behavioral File: D:/Quartus/ProcDes/ALU_VHDL.vhd Line: 16
+    Info (12023): Found entity 1: ALU_VHDL File: D:/Quartus/ProcDes/ALU_VHDL.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file alu_control_vhdl.vhd
+    Info (12022): Found design unit 1: ALU_Control_VHDL-Behavioral File: D:/Quartus/ProcDes/ALU_Control_VHDL.vhd Line: 14
+    Info (12023): Found entity 1: ALU_Control_VHDL File: D:/Quartus/ProcDes/ALU_Control_VHDL.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file register_file_vhdl.vhd
+    Info (12022): Found design unit 1: register_file_VHDL-Behavioral File: D:/Quartus/ProcDes/register_file_VHDL.vhd Line: 20
+    Info (12023): Found entity 1: register_file_VHDL File: D:/Quartus/ProcDes/register_file_VHDL.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file control_unit_vhdl.vhd
+    Info (12022): Found design unit 1: control_unit_VHDL-Behavioral File: D:/Quartus/ProcDes/control_unit_VHDL.vhd Line: 15
+    Info (12023): Found entity 1: control_unit_VHDL File: D:/Quartus/ProcDes/control_unit_VHDL.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file instruction_memory_vhdl.vhd
+    Info (12022): Found design unit 1: Instruction_Memory_VHDL-Behavioral File: D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd Line: 14
+    Info (12023): Found entity 1: Instruction_Memory_VHDL File: D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file mips_vhdl.vhd
+    Info (12022): Found design unit 1: MIPS_VHDL-Behavioral File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 13
+    Info (12023): Found entity 1: MIPS_VHDL File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file tb_mips_vhdl.vhd
+    Info (12022): Found design unit 1: tb_MIPS_VHDL-behavior File: D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd Line: 9
+    Info (12023): Found entity 1: tb_MIPS_VHDL File: D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file block4.bdf
+    Info (12023): Found entity 1: block4
+Info (12127): Elaborating entity "MIPS_VHDL" for the top level hierarchy
+Info (12128): Elaborating entity "Instruction_Memory_VHDL" for hierarchy "Instruction_Memory_VHDL:Instruction_Memory" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 50
+Info (12128): Elaborating entity "control_unit_VHDL" for hierarchy "control_unit_VHDL:control" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 59
+Info (12128): Elaborating entity "register_file_VHDL" for hierarchy "register_file_VHDL:register_file" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 81
+Info (12128): Elaborating entity "ALU_Control_VHDL" for hierarchy "ALU_Control_VHDL:ALUControl" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 102
+Info (12128): Elaborating entity "ALU_VHDL" for hierarchy "ALU_VHDL:alu" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 111
+Info (12128): Elaborating entity "Data_Memory_VHDL" for hierarchy "Data_Memory_VHDL:data_memory" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 137
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "Data_Memory_VHDL:data_memory|RAM" is uninferred due to asynchronous read logic File: D:/Quartus/ProcDes/Data_Memory_VHDL.vhd Line: 21
+Info (13000): Registers with preset signals will power-up high File: D:/Quartus/ProcDes/register_file_VHDL.vhd Line: 26
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 7691 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 7657 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4870 megabytes
+    Info: Processing ended: Mon Nov 13 19:55:14 2023
+    Info: Elapsed time: 00:00:34
+    Info: Total CPU time (on all processors): 00:00:31
+
+
