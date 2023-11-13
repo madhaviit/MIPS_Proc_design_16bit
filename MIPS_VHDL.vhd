@@ -1,8 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_signed.all;
--- fpga4student.com: FPGA projects, Verilog projects, VHDL projects
--- VHDL project: VHDL code for single-cycle MIPS Processor
 entity MIPS_VHDL is
 port (
  clk,reset: in std_logic;
@@ -74,11 +72,11 @@ control: entity work.control_unit_VHDL
 -- multiplexer regdest
   reg_write_dest <= "111" when  reg_dst= "10" else
         instr(6 downto 4) when  reg_dst= "01" else
-        instr(9 downto 7);
+        instr(9 downto 7); --we are setting write address according to instruction type
 -- register file instantiation of the MIPS Processor in VHDL
- reg_read_addr_1 <= instr(12 downto 10);
+ reg_read_addr_1 <= instr(12 downto 10); --we are setting read addresses
  reg_read_addr_2 <= instr(9 downto 7);
-register_file: entity work.register_file_VHDL
+register_file: entity work.register_file_VHDL --mapping the set variables to actual register memory
  port map
  (
  clk => clk,
@@ -91,7 +89,7 @@ register_file: entity work.register_file_VHDL
  reg_read_addr_2 => reg_read_addr_2,
  reg_read_data_2 => reg_read_data_2
  );
--- sign extend
+-- sign extend is required because we want to move backwards in some cases so we may need to add for example -4$(reg_addr). That is why
  tmp1 <= (others => instr(6));
  sign_ext_im <=  tmp1 & instr(6 downto 0); 
  zero_ext_im <= "000000000"& instr(6 downto 0); 
