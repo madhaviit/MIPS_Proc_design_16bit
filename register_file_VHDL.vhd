@@ -11,15 +11,15 @@ port (
  reg_write_en: in std_logic;
  
  reg_read_addr_1: in std_logic_vector(2 downto 0);
- reg_read_addr_2: in std_logic_vector(2 downto 0);
- reg_write_dest: in std_logic_vector(2 downto 0);
- 
  reg_read_data_1: out std_logic_vector(7 downto 0);  ----as each register is of size 8bit
+ reg_read_addr_2: in std_logic_vector(2 downto 0);
  reg_read_data_2: out std_logic_vector(7 downto 0);
+ reg_write_dest: in std_logic_vector(2 downto 0);
  reg_write_data: in std_logic_vector(7 downto 0)
 );
 end register_file_VHDL;
 
+-- like a vector of vector 
 architecture Behavioral of register_file_VHDL is
 type reg_type is array (0 to 7 ) of std_logic_vector (7 downto 0);
 signal reg_array: reg_type;
