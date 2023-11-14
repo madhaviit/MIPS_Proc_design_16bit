@@ -1,7 +1,6 @@
 # MIPS_16bit
 
 # CS305_Lab_Prject_Repo
-Mentor Repository for Team 15 of IITISoC '23 AI/ML domain.
 
 ## Members
 - [Madhav M Kadam (210001027)](https://github.com/madhaviit)
