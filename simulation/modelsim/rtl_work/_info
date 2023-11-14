@@ -23,9 +23,9 @@ V`RVF2d?N9jiokdZ:M71GY1
 !s100 4d4dWa?N>c:>:z]HL?;gI3
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1699926991
+Z7 !s110 1699957911
 !i10b 1
-Z8 !s108 1699926991.000000
+Z8 !s108 1699957911.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/ALU_Control_VHDL.vhd|
 Z10 !s107 D:/Quartus/ProcDes/ALU_Control_VHDL.vhd|
 !i113 1
@@ -96,7 +96,7 @@ R20
 R11
 R12
 Econtrol_unit_vhdl
-Z22 w1699924835
+Z22 w1699955629
 R2
 R3
 !i122 4
@@ -109,42 +109,42 @@ VcU<QUSVLQ@Vn<XOkE=Lf90
 !s100 >HY=K]L]kZSlmhgePQ=?U1
 R6
 31
-Z25 !s110 1699926992
+R7
 !i10b 1
-Z26 !s108 1699926992.000000
-Z27 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/control_unit_VHDL.vhd|
-Z28 !s107 D:/Quartus/ProcDes/control_unit_VHDL.vhd|
+R8
+Z25 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/control_unit_VHDL.vhd|
+Z26 !s107 D:/Quartus/ProcDes/control_unit_VHDL.vhd|
 !i113 1
 R11
 R12
 Abehavioral
 R2
 R3
-Z29 DEx4 work 17 control_unit_vhdl 0 22 cU<QUSVLQ@Vn<XOkE=Lf90
+Z27 DEx4 work 17 control_unit_vhdl 0 22 cU<QUSVLQ@Vn<XOkE=Lf90
 !i122 4
 l18
-L16 123
-V@E0D5[SP8HaDRF[>iIbgT2
-!s100 bZ;n<1@2``G2KL7^Bbm4g3
+L16 112
+VlO?a:CZDImIhZFf_WEXDW1
+!s100 l8Q`ajo[kB4fEIg81_imj1
 R6
 31
-R25
+R7
 !i10b 1
+R8
+R25
 R26
-R27
-R28
 !i113 1
 R11
 R12
 Edata_memory_vhdl
-Z30 w1699913273
-Z31 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z28 w1699913273
+Z29 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R2
 R3
 !i122 0
 R0
-Z32 8D:/Quartus/ProcDes/Data_Memory_VHDL.vhd
-Z33 FD:/Quartus/ProcDes/Data_Memory_VHDL.vhd
+Z30 8D:/Quartus/ProcDes/Data_Memory_VHDL.vhd
+Z31 FD:/Quartus/ProcDes/Data_Memory_VHDL.vhd
 l0
 L5 1
 V[MkNDK>S?<zAlELjN6c;^2
@@ -154,16 +154,16 @@ R6
 R7
 !i10b 1
 R8
-Z34 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/Data_Memory_VHDL.vhd|
-Z35 !s107 D:/Quartus/ProcDes/Data_Memory_VHDL.vhd|
+Z32 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/Data_Memory_VHDL.vhd|
+Z33 !s107 D:/Quartus/ProcDes/Data_Memory_VHDL.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R31
+R29
 R2
 R3
-Z36 DEx4 work 16 data_memory_vhdl 0 22 [MkNDK>S?<zAlELjN6c;^2
+Z34 DEx4 work 16 data_memory_vhdl 0 22 [MkNDK>S?<zAlELjN6c;^2
 !i122 0
 l20
 L15 19
@@ -174,101 +174,101 @@ R6
 R7
 !i10b 1
 R8
-R34
-R35
+R32
+R33
 !i113 1
 R11
 R12
 Einstruction_memory_vhdl
-Z37 w1699924424
-R31
+Z35 w1699955464
+R29
 R2
 R3
 !i122 5
 R0
-Z38 8D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd
-Z39 FD:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd
+Z36 8D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd
+Z37 FD:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd
 l0
 L5 1
 VD1W`S6eS]eAeVDeF@Df1d1
 !s100 ;ghYGIokLIog]lhRR4EDe3
 R6
 31
-R25
+R7
 !i10b 1
-R26
-Z40 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd|
-Z41 !s107 D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd|
+R8
+Z38 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd|
+Z39 !s107 D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R31
+R29
 R2
 R3
-Z42 DEx4 work 23 instruction_memory_vhdl 0 22 D1W`S6eS]eAeVDeF@Df1d1
+Z40 DEx4 work 23 instruction_memory_vhdl 0 22 D1W`S6eS]eAeVDeF@Df1d1
 !i122 5
-l64
-L12 58
-VY=`lo7JCUoKW:fd4ZN[:;2
-!s100 =ESU?cPzQ=E::PHPVhP000
+l37
+L12 31
+VkoE>NdgI<dKINEUDf8:E:1
+!s100 h@>0k6L;NzQfa@<mGA5V12
 R6
 31
-R25
+R7
 !i10b 1
-R26
-R40
-R41
+R8
+R38
+R39
 !i113 1
 R11
 R12
 Emips_vhdl
-Z43 w1699926693
+Z41 w1699957859
 R15
 R16
 R2
 R3
 !i122 6
 R0
-Z44 8D:/Quartus/ProcDes/MIPS_VHDL.vhd
-Z45 FD:/Quartus/ProcDes/MIPS_VHDL.vhd
+Z42 8D:/Quartus/ProcDes/MIPS_VHDL.vhd
+Z43 FD:/Quartus/ProcDes/MIPS_VHDL.vhd
 l0
 L4 1
-V3C804<HAWKn0VNbLm:UPW0
-!s100 :5h^8F:R<JXz3NEnBLDL@1
+V[hEF:l;SKF@nO6Y]35W<G2
+!s100 mHHNe[H`?eV@;3@dei7QR3
 R6
 31
-R25
+Z44 !s110 1699957912
 !i10b 1
-R26
+Z45 !s108 1699957912.000000
 Z46 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/MIPS_VHDL.vhd|
 Z47 !s107 D:/Quartus/ProcDes/MIPS_VHDL.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R36
+R34
 R21
 R13
 Z48 DEx4 work 18 register_file_vhdl 0 22 j_JJe7;^8EN:0i;f6@1QI0
+R27
 R29
-R31
-R42
+R40
 R15
 R16
 R2
 R3
-DEx4 work 9 mips_vhdl 0 22 3C804<HAWKn0VNbLm:UPW0
+DEx4 work 9 mips_vhdl 0 22 [hEF:l;SKF@nO6Y]35W<G2
 !i122 6
-l35
-L11 146
-Vd6DV`B2]A^iP12G^KDJ]<3
-!s100 eIIQ7fV]PPIzm?EMGBKU^1
+l49
+L25 158
+VX;4MgD7CF;P]8<U8MAZW71
+!s100 D_L@5:A<7Udzl4:SC1`1W1
 R6
 31
-R25
+R44
 !i10b 1
-R26
+R45
 R46
 R47
 !i113 1
@@ -276,7 +276,7 @@ R11
 R12
 Eregister_file_vhdl
 Z49 w1699922850
-R31
+R29
 R2
 R3
 !i122 3
@@ -298,7 +298,7 @@ Z53 !s107 D:/Quartus/ProcDes/register_file_VHDL.vhd|
 R11
 R12
 Abehavioral
-R31
+R29
 R2
 R3
 R48
@@ -318,7 +318,7 @@ R53
 R11
 R12
 Etb_mips_vhdl
-Z54 w1699923697
+Z54 w1699957879
 R2
 R3
 !i122 7
@@ -331,9 +331,9 @@ VV3EZc]M=2^4Y5oVc6^6091
 !s100 `k;Aj<PCE4MlaDLd_z9Go2
 R6
 31
-R25
+R44
 !i10b 1
-R26
+R45
 Z57 !s90 -reportprogress|300|-93|-work|work|D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd|
 !s107 D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd|
 !i113 1
@@ -344,15 +344,15 @@ R2
 R3
 DEx4 work 12 tb_mips_vhdl 0 22 V3EZc]M=2^4Y5oVc6^6091
 !i122 7
-l24
-L6 48
-VmUMYbBT:Y=dozT5MC`^ie1
-!s100 7keNSBz3Kmof7fh>lWk6<3
+l54
+L6 90
+V223L40Dn]Vz_fIaa0Ggj40
+!s100 h>V]J?`V8NFHI3nj9::iQ0
 R6
 31
-R25
+R44
 !i10b 1
-R26
+R45
 R57
 Z58 !s107 D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd|
 !i113 1

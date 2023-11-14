@@ -43,17 +43,6 @@ begin
     alu_src <= '0';
     reg_write <= '1';
     sign_or_zero <= '1';
---  when "001" => -- sliu
---   reg_dst <= "00";
---   mem_to_reg <= "00";
---   alu_op <= "10";
---   jump <= '0';
---   branch <= '0';
---   mem_read <= '0';
---   mem_write <= '0';
---   alu_src <= '1';
---   reg_write <= '1';
---   sign_or_zero <= '0';
   when "1101" => -- j
    reg_dst <= "00";
    mem_to_reg <= "00";

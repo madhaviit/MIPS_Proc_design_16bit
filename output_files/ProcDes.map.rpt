@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProcDes
-Tue Nov 14 07:25:55 2023
+Tue Nov 14 16:01:37 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 14 07:25:55 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 14 16:01:37 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; ProcDes                                     ;
 ; Top-level Entity Name              ; MIPS_VHDL                                   ;
@@ -160,14 +160,12 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
-;     Processor 7            ;   0.0%      ;
-;     Processor 8            ;   0.0%      ;
-;     Processors 9-12        ;   0.0%      ;
+;     Processors 7-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -316,7 +314,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -326,7 +324,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 14 07:25:39 2023
+    Info: Processing started: Tue Nov 14 16:01:21 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcDes -c ProcDes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -349,7 +347,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file instruc
     Info (12022): Found design unit 1: Instruction_Memory_VHDL-Behavioral File: D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd Line: 12
     Info (12023): Found entity 1: Instruction_Memory_VHDL File: D:/Quartus/ProcDes/Instruction_Memory_VHDL.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mips_vhdl.vhd
-    Info (12022): Found design unit 1: MIPS_VHDL-Behavioral File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 11
+    Info (12022): Found design unit 1: MIPS_VHDL-Behavioral File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 25
     Info (12023): Found entity 1: MIPS_VHDL File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_mips_vhdl.vhd
     Info (12022): Found design unit 1: tb_MIPS_VHDL-behavior File: D:/Quartus/ProcDes/tb_MIPS_VHDL.vhd Line: 6
@@ -357,12 +355,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file tb_mips
 Info (12021): Found 1 design units, including 1 entities, in source file block4.bdf
     Info (12023): Found entity 1: block4
 Info (12127): Elaborating entity "MIPS_VHDL" for the top level hierarchy
-Info (12128): Elaborating entity "Instruction_Memory_VHDL" for hierarchy "Instruction_Memory_VHDL:Instruction_Memory" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 48
-Info (12128): Elaborating entity "control_unit_VHDL" for hierarchy "control_unit_VHDL:control" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 58
-Info (12128): Elaborating entity "register_file_VHDL" for hierarchy "register_file_VHDL:register_file" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 80
-Info (12128): Elaborating entity "ALU_Control_VHDL" for hierarchy "ALU_Control_VHDL:ALUControl" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 105
-Info (12128): Elaborating entity "ALU_VHDL" for hierarchy "ALU_VHDL:alu" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 114
-Info (12128): Elaborating entity "Data_Memory_VHDL" for hierarchy "Data_Memory_VHDL:data_memory" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 140
+Info (12128): Elaborating entity "Instruction_Memory_VHDL" for hierarchy "Instruction_Memory_VHDL:Instruction_Memory" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 64
+Info (12128): Elaborating entity "control_unit_VHDL" for hierarchy "control_unit_VHDL:control" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 74
+Info (12128): Elaborating entity "register_file_VHDL" for hierarchy "register_file_VHDL:register_file" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 97
+Info (12128): Elaborating entity "ALU_Control_VHDL" for hierarchy "ALU_Control_VHDL:ALUControl" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 124
+Info (12128): Elaborating entity "ALU_VHDL" for hierarchy "ALU_VHDL:alu" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 133
+Info (12128): Elaborating entity "Data_Memory_VHDL" for hierarchy "Data_Memory_VHDL:data_memory" File: D:/Quartus/ProcDes/MIPS_VHDL.vhd Line: 162
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "Data_Memory_VHDL:data_memory|RAM" is uninferred due to asynchronous read logic File: D:/Quartus/ProcDes/Data_Memory_VHDL.vhd Line: 19
 Info (13000): Registers with preset signals will power-up high File: D:/Quartus/ProcDes/register_file_VHDL.vhd Line: 31
@@ -375,9 +373,9 @@ Info (21057): Implemented 1289 device resources after synthesis - the final reso
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 1271 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Tue Nov 14 07:25:55 2023
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Tue Nov 14 16:01:37 2023
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:23
 
 

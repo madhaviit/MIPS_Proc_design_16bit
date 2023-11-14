@@ -5,15 +5,29 @@ entity MIPS_VHDL is
 port (
  clk,reset: in std_logic;
  pc_out, alu_result: out std_logic_vector(7 downto 0)
+ 
+ --additional signals  
+-- load_data: in std_logic_vector(7 downto 0); --these inputs are expected
+-- load_data_valid: in std_logic; --these inputs are expected
+-- load_addr: out std_logic_vector(2 downto 0);
+-- load_addr_valid: out std_logic;
+-- instruction_available : in std_logic; --these inputs are expected
+-- next_instruction: out std_logic_vector(3 downto 0); --as size of rom decided by us
+-- next_instruction_addr: in std_logic_vector(15 downto 0);
+--  pipeline_empty: out std_logic;
+-- instruction_valid: in std_logic;
+-- writeback_data: out std_logic_vector(7 downto 0);
+-- writeback_adddr: out std_logic_vector(7 downto 0);
+-- writeback_valid: out std_logic
 );
 end MIPS_VHDL;
 
 architecture Behavioral of MIPS_VHDL is
  signal pc_current: std_logic_vector(7 downto 0);--current program counter
  signal pc_next,pc2: std_logic_vector(7 downto 0);--temporary
- signal instr: std_logic_vector(15 downto 0);
- signal reg_dst,mem_to_reg,alu_op: std_logic_vector(1 downto 0);
- signal jump,branch,mem_read,mem_write,alu_src,reg_write: std_logic;
+ signal instr: std_logic_vector(15 downto 0);--instruction 
+ signal reg_dst,mem_to_reg,alu_op: std_logic_vector(1 downto 0); --reg_dst tells type of instruction --mem_to_reg tells
+ signal jump,branch,mem_read,mem_write,alu_src,reg_write: std_logic; 
  signal reg_write_dest: std_logic_vector(2 downto 0);
  signal reg_write_data: std_logic_vector(7 downto 0);
  signal reg_read_addr_1: std_logic_vector(2 downto 0);
@@ -71,6 +85,7 @@ control: entity work.control_unit_VHDL
     alu_src => alu_src,
     reg_write => reg_write,
     sign_or_zero => sign_or_zero
+	 
     );
 -- multiplexer regdest
   reg_write_dest <= "111" when  reg_dst= "10" else --jal --TEMWORK
@@ -159,5 +174,9 @@ data_memory: entity work.Data_Memory_VHDL port map
 -- output
  pc_out <= pc_current;
  alu_result <= ALU_out;
+ 
+-- load_addr<=reg_read_addr_1;
+-- load_addr_valid<='1';
+-- pipeline_empty<='0';
 -------------------MEM and WB done------------------------
 end Behavioral;
