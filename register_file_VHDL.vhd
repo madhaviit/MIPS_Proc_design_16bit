@@ -10,7 +10,7 @@ USE IEEE.numeric_std.all;
 entity register_file_VHDL is
 port (
  clk,rst: in std_logic;
- write_enable: in std_logic; --*reg_write_en=write_enable
+ reg_write_en: in std_logic; --*reg_write_en=write_enable
  reg_write_dest: in std_logic_vector(2 downto 0);
  reg_write_data: in std_logic_vector(7 downto 0);----as each register is of size 8bit
  reg_read_addr_1: in std_logic_vector(2 downto 0);

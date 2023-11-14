@@ -1,15 +1,15 @@
-Fitter Status : Successful - Mon Nov 13 19:57:48 2023
+Fitter Status : Successful - Tue Nov 14 06:27:29 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : ProcDes
 Top-level Entity Name : MIPS_VHDL
 Family : Cyclone IV E
 Device : EP4CE6E22C6
 Timing Models : Final
-Total logic elements : 5,494 / 6,272 ( 88 % )
-    Total combinational functions : 3,446 / 6,272 ( 55 % )
-    Dedicated logic registers : 4,240 / 6,272 ( 68 % )
-Total registers : 4240
-Total pins : 34 / 92 ( 37 % )
+Total logic elements : 948 / 6,272 ( 15 % )
+    Total combinational functions : 705 / 6,272 ( 11 % )
+    Dedicated logic registers : 584 / 6,272 ( 9 % )
+Total registers : 584
+Total pins : 18 / 92 ( 20 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )

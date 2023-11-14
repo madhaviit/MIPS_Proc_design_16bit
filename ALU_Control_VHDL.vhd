@@ -15,13 +15,13 @@ process(ALUOp,ALU_Funct)
 begin
 case ALUOp is
 when "00" => 
- ALU_Control <= ALU_Funct(2 downto 0);
-when "01" => 
- ALU_Control <= "001";
-when "10" => 
+ ALU_Control <= ALU_Funct(2 downto 0);--not care condition
+when "01" => --add (matters)
+ ALU_Control <= "010";
+when "10" => --doesn't matter for JAL
  ALU_Control <= "100";
 when "11" => 
- ALU_Control <= "000";
+ ALU_Control <= "010";
 when others => ALU_Control <= "000";
 end case;
 end process;
