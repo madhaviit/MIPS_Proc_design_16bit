@@ -6,7 +6,7 @@
 - [Madhav M Kadam (210001027)](https://github.com/madhaviit)
 - [Sairaj R Loke (210001035)](https://github.com/SairajLoke)
 - [Rishika Sharma (210002063)](https://github.com/gravityinescapable)
-- [Niranjana R Nair (210002049)](https://github.com/NiranjanaNair27)
+- [Niranjana R Nair (210003049)](https://github.com/NiranjanaNair27)
 
 # Notes
 - Some Large Files cannot be pushed. (simulation/qsim/work/_lib1_30.qpg)
