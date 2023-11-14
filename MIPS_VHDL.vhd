@@ -44,6 +44,8 @@ begin
 end process;
 -- PC + 2 
   pc2 <= pc_current + x"02";
+  
+-------PC_adjustment--------------
 -- instruction memory of the MIPS Processor in VHDL
 Instruction_Memory: entity work.Instruction_Memory_VHDL 
         port map
@@ -51,7 +53,7 @@ Instruction_Memory: entity work.Instruction_Memory_VHDL
         pc=> pc_current,
         instruction => instr
         );
-		  
+-------------IF---------------
 -- jump shift left 1
  jump_shift_1 <= instr(5 downto 0) & '0';--TEMWORK(why 14 bits and 0)
 -- control unit of the MIPS Processor in VHDL
@@ -102,6 +104,8 @@ register_file: entity work.register_file_VHDL --mapping the set variables to act
 -- JR control unit of the MIPS Processor in VHDL
  JRControl <= '1' when ((alu_op="00") and (instr(15 downto 12)="1000")) else '0';--for now commented
 -- ALU control unit of the MIPS Processor in VHDL
+
+-----------------ID done-----------------------------
 ALUControl: entity work.ALU_Control_VHDL port map
   (
    ALUOp => alu_op,
@@ -136,6 +140,9 @@ alu: entity work.ALU_VHDL port map
  PC_jr <= reg_read_data_1;
 -- PC_next
  pc_next <= PC_jr when (JRControl='1') else PC_4beqj;
+ 
+ 
+-----------------------EXE done----------------------
 -- data memory of the MIPS Processor in VHDL
 data_memory: entity work.Data_Memory_VHDL port map
   (
@@ -152,5 +159,5 @@ data_memory: entity work.Data_Memory_VHDL port map
 -- output
  pc_out <= pc_current;
  alu_result <= ALU_out;
-
+-------------------MEM and WB done------------------------
 end Behavioral;
